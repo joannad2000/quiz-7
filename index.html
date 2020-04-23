@@ -19,7 +19,7 @@
        margin: 0;
        padding: 0;
     }
-    html, body, #map{
+    html, body, #mapid{
        width: 100%; 
        height: 100%;
     }
@@ -35,7 +35,7 @@
         }).addTo(map);
         
         
-        var pic = L.tileLayer('./newtiles/{z}/{x}/{y}.png', {
+        var pic = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
             minZoom: 12 ,
             MaxZoom: 17 ,
             tms: false ,
